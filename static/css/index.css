@@ -1,0 +1,209 @@
+
+html, body, .container {
+    height: 100%;
+}
+
+body {
+    position: relative;
+    overflow: hidden;
+}
+
+li {
+    list-style: none;
+}
+
+i {
+    font-style: normal;
+}
+
+p {
+    margin: 0;
+}
+
+#login, #chatroom {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    transition: left 0.2s;
+}
+
+#login {
+    left: 0;
+}
+
+.login_title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login_username_input, .login_button {
+    display: block;
+    width: 100%;
+}
+
+.username_label {
+    height: 34px;
+    line-height: 34px;
+}
+
+#chatroom {
+    background: url(/img/bg.jpeg) no-repeat center;
+    background-size: cover;
+    left: 100%;
+}
+
+.chatroom_header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.chatroom_header_title {
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+    margin: 0;
+    height: 40px;
+    line-height: 40px;
+}
+
+.back_container {
+    position: absolute;
+    left: 10px;
+    top: 0;
+    height: 40px;
+    line-height: 40px;
+}
+
+.login_username_input {
+    border: 0;
+    background: none;
+}
+
+.chatroom_container {
+    position: relative;
+    height: 100%;
+}
+
+.chatroom_form {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+}
+
+.chatroom_form .form-group {
+    margin-bottom: 8px;
+}
+
+.chat_lists {
+    margin: 0;
+    padding: 0 0;
+    position: relative;
+    top: 40px;
+    box-sizing: border-box;
+    height: calc( 100% - 40px - 42px - 20px );
+    overflow: auto;
+}
+
+.join, .exit {
+    text-align: center;
+}
+
+.join_text, .exit_text {
+    color: #666;
+    padding: 2px 14px;
+    border-radius: 4px;
+    background-color: rgba( 0, 0, 0, 0.3 );
+    color: #fff;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.self_message {
+    text-align: right;
+    position: relative;
+}
+
+.self_message_text {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 6px 12px;
+    background-color: #62b900;
+    border-radius: 6px;
+    color: #fff;
+    position: relative;
+    left: -12px;
+}
+
+.arrow_right {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 6px solid #62b900;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+}
+
+.arrow_left {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 6px solid #fff;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+}
+
+.other_message_container {
+    position: relative;
+}
+
+.other_username {
+    color: #666;
+    line-height: 2em;
+    padding-left: 10px;
+}
+
+.other_message_text {
+    padding: 6px 12px;
+    background-color: #fff;
+    border-radius: 6px;
+    color: #333;
+    position: relative;
+    text-align: center;
+    left: 12px;
+    display: inline-block;
+}
+
+.self_message_text, .other_message_text {
+    max-width: 60%;
+    text-align: justify;
+}
+
+.chat_list_item {
+    margin: 10px 0;
+}
+
+.chat_list_item:first-child {
+    margin-top: 0;
+}
+.chat_list_item:last-child {
+    margin-bottom: 0;
+}
+
+.clone_item {
+    display: none;
+}
